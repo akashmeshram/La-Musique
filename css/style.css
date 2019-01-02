@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box
+}
+
+html,
+body {
+	background: /*url(../images/bg-pattern.png),*/linear-gradient(to left,#7b4397,#dc2430);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+header {
+	font-family: 'Euphoria Script', cursive;
+	font-size: 60px;
+	letter-spacing: 8px;
+	padding: 10px;
+	color: white;
+}
+
+.Boxes {
+	width: 1000px;
+	padding: 10px
+}
+
+#sequencer {
+	width: inherit;
+	height: 300px;
+	margin: 10px;
+}
+
+#percussion {
+	width: inherit;
+	height: 100px;
+	margin: 10px;
+}
+
+.Controls {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+ 	border-radius: 15px;
+ 	padding: 10px;
+ 	background-color: #c9bfb5;
+}
+
+#button {
+	width: 80px;
+	height: 80px;
+	margin: 0 40px;
+}
+
+#label {
+	width: 60px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	font-family: cursive; 
+	font-size: 20px;
+	color: #7b4397;
+}
+
+#slider {
+	width: 400px;
+	height: 20px;
+	margin: 0 40px;
+}
+
+#text {
+	width: 60px;
+	height: 30px;
+	margin: 0 40px;
+}
+
+
+@media (max-width: 768px) {
+	.Boxes {
+		width: 700px;
+	}
+	.Controls {
+		flex-direction: column;
+	}
+}
