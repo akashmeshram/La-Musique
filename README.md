@@ -1,4 +1,4 @@
-# La Musique
+<h1 align="center">La Musique</h1>
 A fun and intuitive way to create rhythms and melodies.
 
 ## <p align="center"><img src="./laMusic.gif"></p>
