@@ -1,4 +1,4 @@
-# <p align="center">La Musique</p>
+# <h1 align="center">La Musique</h1>
 <p align="center"> A fun and intuitive way to create rhythms and melodies. </p>
 
 ## Demo
