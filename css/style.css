@@ -48,6 +48,7 @@ header {
 	align-items: center;
  	border-radius: 15px;
  	padding: 10px;
+ 	margin-left: 40px;
  	background-color: #c9bfb5;
 }
 
@@ -68,12 +69,18 @@ header {
 }
 
 #slider {
-	width: 400px;
+	width: 300px;
 	height: 20px;
 	margin: 0 40px;
 }
 
 #text {
+	width: 60px;
+	height: 30px;
+	margin: 0 40px;
+}
+
+#notelist {
 	width: 60px;
 	height: 30px;
 	margin: 0 40px;

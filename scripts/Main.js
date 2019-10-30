@@ -9,6 +9,8 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 	inter = "8n";
 }
 
+let selectNotes = ["C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"];
+
 let sequencer = new Nexus.Sequencer('#sequencer', {
 		    'mode': 'toggle',
 		    'rows': 7,
@@ -50,5 +52,10 @@ let text = new Nexus.Number('#text', {
 		    'max': 20000,
 		    'step': 1
 		});
+
+var select = new Nexus.Select('#notelist',{
+  'size': [80,30],
+  'options': selectNotes
+})
 
 text.link(slider);
