@@ -9,7 +9,7 @@
 La Musique is an attempt to make music sequencer a tool that feels easy to use especially for non-musicians.
 
 ## Author
-👤 [Akash Meshram](https://github.com/akashmeshram)
+👤 [Akash Meshram](https://github.com/akashmeshram) - idea and initial work
 
 ## License
 Copyright © 2019 [Akash Meshram](https://github.com/akashmeshram).<br />
