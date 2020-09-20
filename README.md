@@ -7,6 +7,7 @@
 
 ## About
 La Musique is an attempt to make music sequencer a tool that feels easy to use especially for non-musicians.
+It allows users who are interested in music but don't have much music theory background a platform to create and share their own melodies and harmonies.
 
 ## Author
 👤 [Akash Meshram](https://github.com/akashmeshram) - idea and initial work
