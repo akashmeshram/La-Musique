@@ -1,4 +1,4 @@
-const keys = new Tone.Players({
+const pianoPlayers = new Tone.Players({
   "A": "./audio/casio/A1.[mp3|ogg]",
   "A#": "./audio/casio/As1.[mp3|ogg]",
   "Bb": "./audio/casio/As1.[mp3|ogg]",
@@ -23,14 +23,14 @@ const keys = new Tone.Players({
   "fadeOut": "64n",
 }).toMaster();
 
-const steps = new Tone.Players({
-  "hh": "./audio/505/hh.[mp3|ogg]",
-  "hho": "./audio/505/hho.[mp3|ogg]",
-  "kick": "./audio/505/kick.[mp3|ogg]",
-  "snare": "./audio/505/snare.[mp3|ogg]",
+const percussionPlayers = new Tone.Players({
+  "hh": "./audio/percussion/hh.[mp3|ogg]",
+  "hho": "./audio/percussion/hho.[mp3|ogg]",
+  "kick": "./audio/percussion/kick.[mp3|ogg]",
+  "snare": "./audio/percussion/snare.[mp3|ogg]",
 }, {
   "volume": -10,
   "fadeOut": "4n",
 }).toMaster();
 
-export {keys, steps};
+export {pianoPlayers, percussionPlayers};
