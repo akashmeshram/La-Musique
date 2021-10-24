@@ -48,6 +48,11 @@ const select = new Nexus.Select('#notelist',{
   'options': Object.keys(majorScale)
 })
 
+const selectScale = new Nexus.Select('#scalelist',{
+  'size': [80,30],
+  'options': ['Major Scale', "Minor Scale"]
+})
+
 text.link(slider);
 
-export {button, select, slider, percussion, sequencer, beats, inter};
+export {button, select, slider, percussion, sequencer, beats, inter, selectScale};
