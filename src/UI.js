@@ -1,22 +1,4 @@
 import {majorScale} from './MusicScale';
-import {beats, inter} from './settings';
-
-const sequencer = new Nexus.Sequencer('#sequencer', {
-		    'mode': 'toggle',
-		    'rows': 7,
-		    'columns': beats.length,
-		});
-
-sequencer.colorize("accent","#fdcc52");
-sequencer.colorize("fill","#212529");
-
-const percussion = new Nexus.Sequencer('#percussion', {
-		    'mode': 'toggle',
-		    'rows': 4,
-		    'columns': beats.length,
-		});
-percussion.colorize("accent","#fdcc52");
-percussion.colorize("fill","#212529");
 
 const button = new Nexus.Button('#button', {
 		    'mode': 'toggle',
@@ -55,4 +37,4 @@ const selectScale = new Nexus.Select('#scalelist',{
 
 text.link(slider);
 
-export {button, select, slider, percussion, sequencer, beats, inter, selectScale};
+export {button, select, slider, selectScale};
