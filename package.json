@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev-build": "webpack --mode=development --watch",
-    "dev-serve": "live-server",
-    "dev": "npm-run-all --parallel dev-build dev-serve"
+    "develop": "webpack --mode=development --watch",
+    "serve": "live-server",
+    "dev-serve": "npm-run-all --parallel develop serve"
   },
   "keywords": [],
   "author": "",

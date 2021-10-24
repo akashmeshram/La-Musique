@@ -28,6 +28,14 @@ class Instrument {
   get musicScale() {
     return this.scale;
   }
+
+  getNotes(activations) {
+    return activations.map((value, id) => (value) ? this.scale[id] : null).filter(val => val);
+  }
+
+  getPercussions(activations) {
+    return activations.map((value, id) => (value) ? this.percussion[id] : null).filter(val => val);
+  }
 }
 
 export default Instrument;

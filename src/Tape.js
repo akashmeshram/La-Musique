@@ -1,6 +1,6 @@
 import {EventEmitter} from 'events';
 
-class Sound extends EventEmitter {
+class Tape extends EventEmitter {
   constructor(beats, interval){
 		super();
     this.music = null;
@@ -38,4 +38,4 @@ class Sound extends EventEmitter {
   }
 }
 
-export default Sound;
+export default Tape;
