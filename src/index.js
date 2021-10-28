@@ -27,7 +27,7 @@ tapeMachine.on('stop-scroll', () => {
 tapeMachine.init();
 
 select.on('change',function(v) {
-    track.musicScale = v.value;
+    track.musicNote = v.value;
 })
 
 slider.on('change', function(v) {
@@ -40,5 +40,6 @@ button.on('change', function(v) {
 });
 
 selectScale.on('change',function(v) {
-    track.musicScaleType = v.value;
+    track.musicScale = v.value;
+    console.log({v})
 })

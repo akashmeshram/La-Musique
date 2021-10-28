@@ -7,7 +7,7 @@ const button = new Nexus.Button('#button', {
 
 button.colorize("accent","#7d5683");
 button.colorize("fill","#fdcc52");
-button.colorize("mediumLight","#7d5683");
+button.colorize("mediumLight","#212529");
 
 const slider = new Nexus.Slider('#slider', {
 		    'mode': 'relative', 
@@ -18,11 +18,12 @@ const slider = new Nexus.Slider('#slider', {
 		});
 slider.colorize("accent","#7b4397");
 
-const text = new Nexus.Number('#text', {
+const text = new Nexus.Number('#bpm', {
 		    'value': 6,
 		    'min': 0,
 		    'max': 20000,
-		    'step': 1
+		    'step': 1,
+				'size': [80,30]
 		});
 
 const select = new Nexus.Select('#notelist',{
@@ -31,7 +32,7 @@ const select = new Nexus.Select('#notelist',{
 })
 
 const selectScale = new Nexus.Select('#scalelist',{
-  'size': [80,30],
+  'size': [120,30],
   'options': ['Major Scale', "Minor Scale"]
 })
 

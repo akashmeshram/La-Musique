@@ -3,34 +3,33 @@ import { majorScale, minorScale } from './MusicScale';
 class Instrument {
   constructor(){
     this.percussion = ["hh", "hho", "kick", "snare"];
-    this.scale = majorScale['C'];
+    this.note = 'C';
+    this.scale = majorScale[this.note];
     this.scaleType = 'Major Scale';
 	}
 
-  set musicScaleType(type) {
-    this.scaleType = type;
-    this.musicScale = this.scale;
-  }
-
-  set musicScale(scale) {
+  musicScaleChange() {
     if (this.scaleType === 'Major Scale') {
-      this.scale = majorScale[scale];
+      this.scale = majorScale[this.note];
     } else 
     if (this.scaleType === 'Minor Scale'){
-      this.scale = minorScale[scale];
+      this.scale = minorScale[this.note];
     }
   }
 
-  get musicScaleType() {
-    return this.musicScaleType;
+  set musicNote(note) {
+    this.note = note;
+    this.musicScaleChange();
   }
 
-  get musicScale() {
-    return this.scale;
+  set musicScale(type) {
+    this.scaleType = type;
+    this.musicScaleChange();
   }
 
   getNotes(activations) {
-    return activations.map((value, id) => (value) ? this.scale[id] : null).filter(val => val);
+    const data  = activations.map((value, id) => (value) ? this.scale[id] : null);
+    return data.filter(val => val);
   }
 
   getPercussions(activations) {

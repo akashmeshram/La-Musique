@@ -1,103 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
 * {
 	box-sizing: border-box
 }
 
+html {
+	font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 html,
 body {
-	background: /*url(../images/bg-pattern.png),*/linear-gradient(to left,#7b4397,#dc2430);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	width: 100vw;
+	min-height: 100vh;
+}
 
-	width: 100%;
-	height: 100%;
-	font-family: Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
+body {
+  margin: 0;
+  font: 16px/1 sans-serif;
+	font-weight: 400;
+  line-height: 1.75;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(to left,#7b4397,#dc2430);
+	overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+	width: 0 !important;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+
+.neon {
+	margin: 1.38rem auto;
+	font-size: 3.052rem;
+  font-family: neon;
+  color: #FB4264;
+  text-shadow: 0 0 3vw #F40A35;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
 }
 
 header {
-	font-family: 'Euphoria Script', cursive;
-	font-size: 60px;
-	letter-spacing: 8px;
-	padding: 10px;
-	color: white;
+	text-align: center;
 }
 
-.Boxes {
-	width: 1000px;
-	padding: 10px
+main {
+	margin: auto;
+}
+
+#sequencer, #percussion {
+	width: 100%;
+	margin: 3rem auto 1.38rem;
 }
 
 #sequencer {
-	width: inherit;
-	height: 300px;
-	margin: 10px;
+	height: 700px;
 }
 
 #percussion {
-	width: inherit;
-	height: 100px;
-	margin: 10px;
+	height: 400px;
 }
 
-.Controls {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
- 	border-radius: 15px;
- 	padding: 10px;
- 	margin-left: 40px;
- 	background-color: #c9bfb5;
+aside {
+	width: 80%;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(8px);
+	border-radius: 5px;
+	margin: 3rem auto 1.38rem;
+	padding: 1em;
 }
 
 #button {
 	width: 80px;
 	height: 80px;
-	margin: 0 40px;
+	margin: 2em auto;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #000;
 }
 
-#label {
-	width: 60px;
-	height: 30px;
+#speed {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	font-family: cursive; 
-	font-size: 20px;
-	color: #7b4397;
+	margin: 4em 0;
+}
+
+#tempo {
+	color: white;
+	margin: 0 1em 0 0;
 }
 
 #slider {
-	width: 300px;
-	height: 20px;
-	margin: 0 40px;
+	width: 500px;
+	height: 25px;
 }
 
-#text {
+#bpm {
 	width: 60px;
 	height: 30px;
-	margin: 0 40px;
+	margin: 0 1em;
 }
 
-#notelist {
-	width: 60px;
-	height: 30px;
-	margin: 0 40px;
+#settings {
+	margin: 4em auto;
+	text-align: center;
 }
 
-#scalelist {
-	width: 100px;
-	height: 30px;
-	margin: 0 40px;
+#settings span {
+	margin: 0 0.5em;
 }
 
+footer p {
+	color: white;
+	margin-top: 3em ;
+	text-align: center;
+}
 
-@media (max-width: 768px) {
-	.Boxes {
-		width: 700px;
+@media (min-width: 75em) {
+	main {
+		width: 80%;
 	}
-	.Controls {
-		flex-direction: column;
+
+	#sequencer {
+		height: 350px;
+	}
+	
+	#percussion {
+		height: 200px;
+	}
+	
+	aside {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#button, #speed, #settings {
+		margin: 0;
 	}
 }

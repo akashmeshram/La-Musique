@@ -2,35 +2,36 @@
 <html>
 <head>
 	<title>Sequencer | Akash Meshram</title>
-	<link href="https://fonts.googleapis.com/css?family=Euphoria+Script" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script src="./lib/NexusUI.js"></script>
 	<script src="./lib/Tone.js"></script>
 </head>
 <body>
 	<header>
-		La Musique
+		<h1 class="neon">La Musique</h1>
 	</header>
 
-	<section class="Boxes">
+	<main>
 		<div id="sequencer"></div>
 		<div id="percussion"></div>
-	</section>
+	</main>
 
-	<section class="Controls">
+	<aside>
 		<div id="button"></div>
-		<div id="label"><p>TEMPO</p></div>
-		<div id="slider"></div>
-		<div id="text"></div>		
-		<div id="notelist"></div>
-		<div id="scalelist"></div>
-	</section>
+		<div id='speed'>
+			<div><p id='tempo'>Tempo</p></div>
+			<div id="slider"></div>
+			<div id="bpm"></div>	
+		</div>
+		<div id='settings'>
+			<span id="notelist"></span>
+			<span id="scalelist"></span>
+		</div>
+	</aside>
+	<!-- <footer>
+		<p>Created by Akash Meshram</p>
+	</footer> -->
 
 </body>
 <script src="./dist/main.js"></script>
-	<!-- <script src="./instruments.js"></script>
-	<script src="./scales.js"></script>
-	<script src="./Main.js"></script>
-	<script src="./Player.js"></script> -->
 </html>

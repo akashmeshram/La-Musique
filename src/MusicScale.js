@@ -23,7 +23,7 @@ const minorScale = {
   "D#/Eb" :  ["Eb", "F" , "Gb", "Ab", "Bb", "Cb", "Db", "Eb"],
   "E"     :  ["E" , "F#", "G" , "A" , "B" , "C" , "D" , "E" ],
   "F"     :  ["F" , "G" , "Ab", "Bb", "C" , "Db", "Eb", "F" ],
-  "F#/Gb" :  ["F#", "G#", "A#", "B" , "C#", "D#", "E#", "F#"],
+  "F#/Gb" :  ["F#", "G#", "A" , "B" , "C#", "D" , "E" , "F#"],
   "G"     :  ["G" , "A" , "Bb", "C" , "D" , "Eb", "F" , "G" ],
   "G#/Ab" :  ["Ab", "Bb", "Cb", "Db", "Eb", "Fb", "Gb", "Ab"]
 };
