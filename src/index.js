@@ -41,5 +41,4 @@ button.on('change', function(v) {
 
 selectScale.on('change',function(v) {
     track.musicScale = v.value;
-    console.log({v})
 })
