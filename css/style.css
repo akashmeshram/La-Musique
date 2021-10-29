@@ -54,7 +54,7 @@ p {
 	font-size: 3.052rem;
   font-family: neon;
   color: #FB4264;
-  text-shadow: 0 0 3vw #F40A35;
+  text-shadow: 0 0 1.017rem #F40A35;
 }
 
 .neon {
@@ -66,12 +66,12 @@ p {
 @keyframes neon {
   0%,
   100% {
-    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
-    color: #FED128;
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #fdcc52, .5vw .5vw .1vw #5C5346;
+    color: #fdcc52;
   }
   50% {
     text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
-    color: #806914;
+    color: #5C5346;
   }
 }
 
@@ -80,6 +80,7 @@ header {
 }
 
 main {
+	width: 80%;
 	margin: auto;
 }
 
@@ -97,7 +98,7 @@ main {
 }
 
 aside {
-	width: 80%;
+	width: 70%;
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(8px);
 	border-radius: 5px;
@@ -134,6 +135,12 @@ aside {
 	width: 60px;
 	height: 30px;
 	margin: 0 1em;
+	text-align: center;
+}
+
+#bpm input {
+	text-align: center;
+	border-radius: 2px;
 }
 
 #settings {
@@ -143,6 +150,11 @@ aside {
 
 #settings span {
 	margin: 0 0.5em;
+}
+
+#notelist select, #scalelist select {
+	text-align: center;
+	border-radius: 2px;
 }
 
 footer p {

@@ -35,8 +35,8 @@ slider.on('change', function(v) {
 });
 
 button.on('change', function(v) {
-    if (v) tapeMachine.start();
-    else tapeMachine.stop();
+    if (v) tapeMachine.stop();
+    else tapeMachine.start();
 });
 
 selectScale.on('change',function(v) {

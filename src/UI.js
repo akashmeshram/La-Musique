@@ -2,10 +2,10 @@ import {majorScale} from './MusicScale';
 
 const button = new Nexus.Button('#button', {
 		    'mode': 'toggle',
-		    'state': false
+		    'state': true
 		});
 
-button.colorize("accent","#7d5683");
+button.colorize("accent","#fdcc52");
 button.colorize("fill","#fdcc52");
 button.colorize("mediumLight","#212529");
 
