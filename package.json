@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "Akash Meshram",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "copy-webpack-plugin": "^9.0.1",
     "gh-pages": "^3.2.3",
